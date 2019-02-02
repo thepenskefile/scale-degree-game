@@ -3,7 +3,6 @@
 * [Fannypack UI kit](https://fannypack.style/)
 
 ![Preview](https://github.com/thepenskefile/scale-degree-game/blob/master/images/scale-degree-game-preview.png)
-![Preview with correct answer](https://github.com/thepenskefile/scale-degree-game/blob/master/images/scale-degree-game-preview-correct-answwer.png)
 ![Preview with incorrect answer](https://github.com/thepenskefile/scale-degree-game/blob/master/images/scale-degree-game-preview-incorrect-answer.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
