@@ -89,12 +89,12 @@ class QuestionContainer extends Component {
     }    
 
     render() {
-        const { question, answer, isCorrect } = this.props;
+        const { question, isCorrect } = this.props;
         const { prevQuestion, prevAnswer } = this.state;
         return(
             <div> 
                 <QuestionComponent question={question}/>
-                <AnswerComponent question={prevQuestion} answer={prevAnswer} onClickAnswerButton={this.handleOnClickAnswerButton} isCorrect={isCorrect} debug={answer}/>
+                <AnswerComponent question={prevQuestion} answer={prevAnswer} onClickAnswerButton={this.handleOnClickAnswerButton} isCorrect={isCorrect} />
             </div>
         )
     }
