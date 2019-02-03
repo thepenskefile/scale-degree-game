@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import React  from 'react';
+import React, {Fragment}  from 'react';
 import { keys } from '../actions'
 import { Button, Box } from 'fannypack'
 import styled from 'styled-components';
@@ -44,11 +44,11 @@ function AnswerButtons( props ) {
 }
 
 const AnswerComponent = ({ question, answer, onClickAnswerButton, isCorrect, debug }) => (
-    <div>
+    <Fragment>
         <AnswerButtons onClick={onClickAnswerButton}/>
-        <AnswerText>{isCorrect && `Correct! The ${question.alteration===1 ? '\u266F' : '\u266D'}${question.degree} of ${question.key} is ${answer}`}</AnswerText>
-        <AnswerText>{isCorrect===false && `Incorrect! The ${question.alteration===1 ? '\u266F' : '\u266D'}${question.degree} of ${question.key} is ${answer}`}</AnswerText>
-    </div>
+        <AnswerText>{isCorrect && `Correct! The ${question.alteration === 0 ? '' : (question.alteration===1 ? '\u266F' : '\u266D')}${question.degree} of ${question.key} is ${answer}`}</AnswerText>
+        <AnswerText>{isCorrect===false && `Incorrect! The ${question.alteration === 0 ? '' : (question.alteration===1 ? '\u266F' : '\u266D')}${question.degree} of ${question.key} is ${answer}`}</AnswerText>
+    </Fragment>         
 )
 
 AnswerComponent.propTypes = {
